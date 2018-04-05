@@ -3,12 +3,60 @@
   "version": "0.0.1",
   "description": "React JSON Schema Viewer",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bencoveney/reacson.git"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/clean-webpack-plugin": "^0.1.2",
+    "@types/copy-webpack-plugin": "^4.4.1",
+    "@types/html-webpack-plugin": "^2.30.3",
+    "@types/node": "^9.6.1",
+    "@types/react": "^16.1.0",
+    "@types/react-dom": "^16.0.4",
+    "@types/source-map": "0.5.2",
+    "@types/uglifyjs-webpack-plugin": "^1.1.0",
+    "@types/webpack": "^4.1.3",
+    "@types/webpack-env": "^1.13.5",
+    "@types/webpack-merge": "^4.1.3",
+    "awesome-typescript-loader": "^5.0.0-1",
+    "clean-webpack-plugin": "^0.1.19",
+    "copy-webpack-plugin": "^4.5.1",
+    "favicons-webpack-plugin": "0.0.9",
+    "html-webpack-include-assets-plugin": "^1.0.4",
+    "html-webpack-plugin": "^3.1.0",
+    "markdownlint-cli": "^0.8.1",
+    "mdi": "^2.2.43",
+    "react": "^16.3.0",
+    "react-dom": "^16.3.0",
+    "source-map-loader": "^0.2.3",
+    "ts-node": "^5.0.1",
+    "tslint": "^5.9.1",
+    "tslint-loader": "^3.6.0",
+    "tslint-react": "^3.5.1",
+    "typescript": "^2.8.1",
+    "uglifyjs-webpack-plugin": "^1.2.4",
+    "webpack": "^4.4.1",
+    "webpack-cli": "^2.0.13",
+    "webpack-dev-server": "^3.1.1",
+    "webpack-merge": "^4.1.2"
+  },
+  "scripts": {
+    "lint-markdown": "markdownlint --config ./mdlint.json ./README.md",
+    "lint-webpack": "tslint ./webpack.*",
+    "test": "npm run lint-webpack && npm run lint-markdown && npm run prod",
+    "dev": "webpack-dev-server --config webpack.dev.ts --mode development",
+    "prod": "webpack --config webpack.prod.ts --mode production"
+  },
+  "engines": {
+    "node": ">=6.13.0"
+  },
+  "greenkeeper": {
+    "ignore": [
+      "@types/source-map",
+      "awesome-typescript-loader"
+    ]
   },
   "keywords": [
     "React",
