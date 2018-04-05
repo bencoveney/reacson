@@ -1,0 +1,26 @@
+{
+  "name": "reacson",
+  "version": "0.0.1",
+  "description": "React JSON Schema Viewer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bencoveney/reacson.git"
+  },
+  "keywords": [
+    "React",
+    "JSON",
+    "Schema",
+    "Viewer",
+    "Visualizer"
+  ],
+  "author": "Ben Coveney",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bencoveney/reacson/issues"
+  },
+  "homepage": "https://github.com/bencoveney/reacson#readme"
+}
