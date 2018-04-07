@@ -4,7 +4,7 @@ import * as React from "react";
 import { JSONSchema6 } from "json-schema";
 
 const style: React.CSSProperties = {
-  color: "orange",
+  color: "#3F51B5",
 };
 
 export const ArrayType: React.SFC<JSONSchema6> = (

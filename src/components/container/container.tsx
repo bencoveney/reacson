@@ -4,9 +4,9 @@ import * as React from "react";
 import { JSONSchema6 } from "json-schema";
 
 const containerStyle: React.CSSProperties = {
+  boxShadow: "0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)",
   display: "flex",
   flexDirection: "column",
-  margin: "1em",
 };
 
 const topStyle: React.CSSProperties = {
@@ -14,7 +14,6 @@ const topStyle: React.CSSProperties = {
 };
 
 const contentStyle: React.CSSProperties = {
-  border: "1px solid black",
   flex: "1 1 auto",
   padding: "1rem",
 };

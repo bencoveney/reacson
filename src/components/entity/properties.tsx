@@ -5,6 +5,12 @@ import { JSONSchema6 } from "json-schema";
 
 import { Property } from "./property";
 
+const style: React.CSSProperties = {
+  borderCollapse: "collapse",
+  margin: "1rem 0",
+  width: "100%",
+};
+
 export const Properties: React.SFC<JSONSchema6> = (
   props,
 ) => {
@@ -34,8 +40,8 @@ export const Properties: React.SFC<JSONSchema6> = (
   );
 
   return (
-    <div>
+    <table style={style}>
       {elements}
-    </div>
+    </table>
   );
 };

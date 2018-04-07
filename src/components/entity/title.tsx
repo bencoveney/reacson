@@ -7,7 +7,7 @@ import { Spread } from "../layout/spread";
 import { Type } from "../type/type";
 
 const titleStyle: React.CSSProperties = {
-  backgroundColor: "black",
+  backgroundColor: "#F44336",
   color: "white",
   padding: "1rem",
 };
@@ -23,10 +23,7 @@ export const Title: React.SFC<JSONSchema6> = (
   }
   return (
     <div style={titleStyle}>
-      <Spread>
-        <h1>{resolved}</h1>
-        <Type {...props}/>
-      </Spread>
+      <h1>{resolved}</h1>
     </div>
   );
 };

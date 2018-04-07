@@ -4,7 +4,7 @@ import * as React from "react";
 import { JSONSchema6 } from "json-schema";
 
 const style: React.CSSProperties = {
-  color: "purple",
+  color: "#3F51B5",
 };
 
 export const BooleanType: React.SFC<JSONSchema6> = (

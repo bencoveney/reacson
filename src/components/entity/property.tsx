@@ -8,7 +8,11 @@ import { Spread } from "../layout/spread";
 import { Type } from "../type/type";
 
 const style: React.CSSProperties = {
-  marginBottom: "1rem",
+  borderColor: "#E0E0E0",
+  borderStyle: "solid",
+  borderWidth: "1px 0 0 0",
+  padding: "1rem 0",
+  verticalAlign: "top",
 };
 
 export const Property: React.SFC<{
@@ -21,9 +25,13 @@ export const Property: React.SFC<{
   schema,
 }) => {
   return (
-    <div style={style}>
-      <code>{name}</code>
-      <Details {...schema}/>
-    </div>
+    <tr>
+      <td style={style}>
+        <code>{name}</code>
+      </td>
+      <td style={style}>
+        <Details {...schema}/>
+      </td>
+    </tr>
   );
 };
