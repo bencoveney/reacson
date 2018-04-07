@@ -1,0 +1,64 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Person",
+  "type": "object",
+  "properties": {
+    "justArray": {
+      "type": "array"
+    },
+    "descriptiveArray": {
+      "type": "array",
+      "title": "Descriptive Array",
+      "description": "An array with a title and description"
+    },
+    "justBoolean": {
+      "type": "boolean"
+    },
+    "descriptiveBoolean": {
+      "type": "boolean",
+      "title": "Descriptive Boolean",
+      "description": "A boolean with a title and description"
+    },
+    "justInteger": {
+      "type": "integer"
+    },
+    "descriptiveInteger": {
+      "type": "integer",
+      "title": "Descriptive Integer",
+      "description": "An integer with a title and description"
+    },
+    "justNull": {
+      "type": "null"
+    },
+    "descriptiveNull": {
+      "type": "null",
+      "title": "Descriptive Null",
+      "description": "A null with a title and description"
+    },
+    "justNumber": {
+      "type": "number"
+    },
+    "descriptiveNumber": {
+      "type": "number",
+      "title": "Descriptive Number",
+      "description": "A number with a title and description"
+    },
+    "justObject": {
+      "type": "object"
+    },
+    "descriptiveObject": {
+      "type": "object",
+      "title": "Descriptive Object",
+      "description": "A object with a title and description"
+    },
+    "justString": {
+      "type": "string"
+    },
+    "descriptiveString": {
+      "type": "string",
+      "title": "Descriptive String",
+      "description": "A string with a title and description"
+    }
+  },
+  "required": ["firstName", "lastName"]
+}
