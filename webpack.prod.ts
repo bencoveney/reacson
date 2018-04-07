@@ -1,3 +1,4 @@
+import * as CleanPlugin from "clean-webpack-plugin";
 import * as UglifyJSPlugin from "uglifyjs-webpack-plugin";
 import * as Webpack from "webpack";
 import * as WebpackMerge from "webpack-merge";
@@ -11,6 +12,10 @@ const FaviconsPlugin = require("favicons-webpack-plugin");
 const configuration: Webpack.Configuration = {
   devtool: "source-map",
   plugins: [
+    new CleanPlugin(
+      [Common.outputDirectory],
+      { verbose: false },
+    ),
     new UglifyJSPlugin({
       sourceMap: true,
     }),

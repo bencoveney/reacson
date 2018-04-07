@@ -1,8 +1,5 @@
 import * as React from "react";
 
-// tslint:disable:no-implicit-dependencies
-import { JSONSchema6 } from "json-schema";
-
 const containerStyle: React.CSSProperties = {
   boxShadow: "0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)",
   display: "flex",
@@ -14,6 +11,7 @@ const topStyle: React.CSSProperties = {
 };
 
 const contentStyle: React.CSSProperties = {
+  backgroundColor: "white",
   flex: "1 1 auto",
   padding: "1rem",
 };

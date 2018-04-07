@@ -4,8 +4,6 @@ import * as React from "react";
 import { JSONSchema6 } from "json-schema";
 
 import { Details } from "../details/details";
-import { Spread } from "../layout/spread";
-import { Type } from "../type/type";
 
 const style: React.CSSProperties = {
   borderColor: "#E0E0E0",
@@ -13,6 +11,14 @@ const style: React.CSSProperties = {
   borderWidth: "1px 0 0 0",
   padding: "1rem 0",
   verticalAlign: "top",
+};
+
+const requiredStyle: React.CSSProperties = {
+  fontWeight: "bold",
+};
+
+const asteriskStyle: React.CSSProperties = {
+  color: "#F44336",
 };
 
 export const Property: React.SFC<{
@@ -24,10 +30,21 @@ export const Property: React.SFC<{
   name,
   schema,
 }) => {
+  let header: React.ReactElement<any>;
+  if (isRequired) {
+    header = (
+      <span title="Required">
+        <code style={requiredStyle}>{name}</code>
+        <span style={asteriskStyle}>*</span>
+      </span>
+    );
+  } else {
+    header = <code>{name}</code>;
+  }
   return (
     <tr>
       <td style={style}>
-        <code>{name}</code>
+        {header}
       </td>
       <td style={style}>
         <Details {...schema}/>

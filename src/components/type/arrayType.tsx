@@ -7,8 +7,6 @@ const style: React.CSSProperties = {
   color: "#3F51B5",
 };
 
-export const ArrayType: React.SFC<JSONSchema6> = (
-  props,
-) => {
+export const ArrayType: React.SFC<JSONSchema6> = () => {
   return <code style={style}>array</code>;
 };

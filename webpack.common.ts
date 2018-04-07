@@ -1,4 +1,3 @@
-import * as CleanPlugin from "clean-webpack-plugin";
 import * as CopyPlugin from "copy-webpack-plugin";
 import * as HtmlPlugin from "html-webpack-plugin";
 import * as Path from "path";
@@ -16,7 +15,7 @@ const packageJson = require("./package.json");
 const resolvePath = (target: string) => Path.resolve(__dirname, target);
 
 // Output to `/docs/` for GitHub pages.
-const outputDirectory = "docs";
+export const outputDirectory = "docs";
 
 export const configuration: Webpack.Configuration = {
   devtool: "source-map",
@@ -56,10 +55,6 @@ export const configuration: Webpack.Configuration = {
     },
   },
   plugins: [
-    new CleanPlugin(
-      [outputDirectory],
-      { verbose: false },
-    ),
     new CopyPlugin([
       { from: "assets/reset.css", to: "." },
       { from: "node_modules/mdi/fonts", to: "./mdi/fonts" },

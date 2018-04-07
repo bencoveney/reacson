@@ -3,9 +3,6 @@ import * as React from "react";
 // tslint:disable:no-implicit-dependencies
 import { JSONSchema6 } from "json-schema";
 
-import { Spread } from "../layout/spread";
-import { Type } from "../type/type";
-
 const titleStyle: React.CSSProperties = {
   backgroundColor: "#F44336",
   color: "white",

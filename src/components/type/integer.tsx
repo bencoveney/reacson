@@ -7,8 +7,6 @@ const style: React.CSSProperties = {
   color: "#3F51B5",
 };
 
-export const Integer: React.SFC<JSONSchema6> = (
-  props,
-) => {
+export const Integer: React.SFC<JSONSchema6> = () => {
   return <code style={style}>integer</code>;
 };

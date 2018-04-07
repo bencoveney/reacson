@@ -3,6 +3,8 @@
     "sourceMap": true,
     "strict": true,
     "target": "es6",
-    "jsx": "react"
+    "jsx": "react",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
   }
 }

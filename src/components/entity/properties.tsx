@@ -41,7 +41,9 @@ export const Properties: React.SFC<JSONSchema6> = (
 
   return (
     <table style={style}>
-      {elements}
+      <tbody>
+        {elements}
+      </tbody>
     </table>
   );
 };
