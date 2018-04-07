@@ -3,6 +3,7 @@ import * as React from "react";
 // tslint:disable:no-implicit-dependencies
 import { JSONSchema6 } from "json-schema";
 
+import { Ref } from "../definition/ref";
 import { ArrayDetails } from "./arrayDetails";
 import { BooleanDetails } from "./booleanDetails";
 import { IntegerDetails } from "./integerDetails";
@@ -14,6 +15,9 @@ import { StringDetails } from "./stringDetails";
 export const Details: React.SFC<JSONSchema6> = (
   props,
 ) => {
+  if (props.$ref) {
+    return <Ref refPath={props.$ref} />;
+  }
   switch (props.type) {
     case "array":
       return <ArrayDetails {...props}/>;
