@@ -13,6 +13,11 @@ const style: React.CSSProperties = {
   verticalAlign: "top",
 };
 
+const keyStyle: React.CSSProperties = {
+  ...style,
+  width: "150px",
+};
+
 const requiredStyle: React.CSSProperties = {
   fontWeight: "bold",
 };
@@ -43,7 +48,7 @@ export const Property: React.SFC<{
   }
   return (
     <tr>
-      <td style={style}>
+      <td style={keyStyle}>
         {header}
       </td>
       <td style={style}>

@@ -4,6 +4,8 @@ const containerStyle: React.CSSProperties = {
   boxShadow: "0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)",
   display: "flex",
   flexDirection: "column",
+  margin: "0 auto",
+  maxWidth: "700px",
 };
 
 const topStyle: React.CSSProperties = {

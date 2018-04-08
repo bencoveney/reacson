@@ -20,7 +20,7 @@ const sidebarStyle: React.CSSProperties = {
 };
 
 const contentStyle: React.CSSProperties = {
-  backgroundColor: "#E0E0E0",
+  backgroundColor: "#EEEEEE",
   flex: "1 1 auto",
   height: "100%",
   overflow: "auto",

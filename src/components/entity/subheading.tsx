@@ -1,7 +1,7 @@
 import * as React from "react";
 
 const style: React.CSSProperties = {
-  backgroundColor: "#EEEEEE",
+  backgroundColor: "#E0E0E0",
   padding: "0.5rem 1rem",
 };
 

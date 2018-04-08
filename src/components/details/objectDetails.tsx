@@ -22,7 +22,7 @@ export const ObjectDetails: React.SFC<JSONSchema6> = (
         </Subheading>
       </div>
       <Description {...props} />
-      <h2>Properties</h2>
+      <h2>Properties:</h2>
       <Properties {...props} />
     </Container>
   );

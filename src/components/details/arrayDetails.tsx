@@ -10,6 +10,10 @@ import { Title } from "../entity/title";
 import { Type } from "../type/type";
 import { Details } from "./details";
 
+const style: React.CSSProperties = {
+  margin: "1rem",
+};
+
 export const ArrayDetails: React.SFC<JSONSchema6> = (
   props,
 ) => {
@@ -25,7 +29,9 @@ export const ArrayDetails: React.SFC<JSONSchema6> = (
       </div>
       <Description {...props}/>
       <h2>Elements:</h2>
-      <Details {...items}/>
+      <div style={style}>
+        <Details {...items}/>
+      </div>
     </Container>
   );
 };
