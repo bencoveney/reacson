@@ -9,17 +9,12 @@ const style: React.CSSProperties = {
   borderColor: "#E0E0E0",
   borderStyle: "solid",
   borderWidth: "1px 0 0 0",
-  padding: "1rem 0",
   verticalAlign: "top",
 };
 
 const keyStyle: React.CSSProperties = {
   ...style,
   width: "150px",
-};
-
-const requiredStyle: React.CSSProperties = {
-  fontWeight: "bold",
 };
 
 const asteriskStyle: React.CSSProperties = {
@@ -38,10 +33,10 @@ export const Property: React.SFC<{
   let header: React.ReactElement<any>;
   if (isRequired) {
     header = (
-      <span title="Required">
-        <code style={requiredStyle}>{name}</code>
+      <code title="Required">
+        {name}
         <span style={asteriskStyle}>*</span>
-      </span>
+      </code>
     );
   } else {
     header = <code>{name}</code>;

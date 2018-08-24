@@ -6,8 +6,8 @@ import { JSONSchema6 } from "json-schema";
 import { Container } from "../container/container";
 import { Description } from "../entity/description";
 import { Properties } from "../entity/properties";
-import { Subheading } from "../entity/subheading";
 import { Title } from "../entity/title";
+import { Horizontal } from "../layout/horizontal";
 import { Type } from "../type/type";
 
 export const ObjectDetails: React.SFC<JSONSchema6> = (
@@ -15,14 +15,11 @@ export const ObjectDetails: React.SFC<JSONSchema6> = (
 ) => {
   return (
     <Container>
-      <div>
+      <Horizontal>
         <Title {...props}/>
-        <Subheading>
-          <Type {...props}/>
-        </Subheading>
-      </div>
+        <Type {...props}/>
+      </Horizontal>
       <Description {...props} />
-      <h2>Properties:</h2>
       <Properties {...props} />
     </Container>
   );

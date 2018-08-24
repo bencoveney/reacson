@@ -7,7 +7,6 @@ import { Property } from "./property";
 
 const style: React.CSSProperties = {
   borderCollapse: "collapse",
-  margin: "1rem 0",
   width: "100%",
 };
 

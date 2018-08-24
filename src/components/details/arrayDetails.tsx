@@ -5,13 +5,13 @@ import { JSONSchema6 } from "json-schema";
 
 import { Container } from "../container/container";
 import { Description } from "../entity/description";
-import { Subheading } from "../entity/subheading";
 import { Title } from "../entity/title";
+import { Horizontal } from "../layout/horizontal";
 import { Type } from "../type/type";
 import { Details } from "./details";
 
 const style: React.CSSProperties = {
-  margin: "1rem",
+  margin: 0,
 };
 
 export const ArrayDetails: React.SFC<JSONSchema6> = (
@@ -21,14 +21,11 @@ export const ArrayDetails: React.SFC<JSONSchema6> = (
 
   return (
     <Container>
-      <div>
+      <Horizontal>
         <Title {...props}/>
-        <Subheading>
-          <Type {...props}/>
-        </Subheading>
-      </div>
+        <Type {...props}/>
+      </Horizontal>
       <Description {...props}/>
-      <h2>Elements:</h2>
       <div style={style}>
         <Details {...items}/>
       </div>

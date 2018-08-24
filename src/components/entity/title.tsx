@@ -3,10 +3,8 @@ import * as React from "react";
 // tslint:disable:no-implicit-dependencies
 import { JSONSchema6 } from "json-schema";
 
-const titleStyle: React.CSSProperties = {
-  backgroundColor: "#F44336",
-  color: "white",
-  padding: "0.5rem 1rem",
+const style: React.CSSProperties = {
+  fontSize: "1.6rem",
 };
 
 export const Title: React.SFC<JSONSchema6> = (
@@ -19,7 +17,7 @@ export const Title: React.SFC<JSONSchema6> = (
     return null;
   }
   return (
-    <div style={titleStyle}>
+    <div style={style}>
       <h1>{resolved}</h1>
     </div>
   );

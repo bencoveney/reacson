@@ -1,21 +1,14 @@
 import * as React from "react";
 
-const containerStyle: React.CSSProperties = {
-  boxShadow: "0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)",
+const style: React.CSSProperties = {
+  backgroundColor: "white",
+  borderLeft: "5px solid #45ADE8",
+  boxShadow: "0 3px 6px rgba(0,0,0,0.16)",
   display: "flex",
   flexDirection: "column",
   margin: "0 auto",
-  maxWidth: "700px",
-};
-
-const topStyle: React.CSSProperties = {
-  flex: "0 0 0",
-};
-
-const contentStyle: React.CSSProperties = {
-  backgroundColor: "white",
-  flex: "1 1 auto",
-  padding: "1rem",
+  maxWidth: "1600px",
+  padding: "2rem",
 };
 
 interface Props {
@@ -24,12 +17,8 @@ interface Props {
 
 export const Container: React.SFC<Props> = (
   props,
-) => {
-  const [first, ...rest] = props.children;
-  return (
-    <div style={containerStyle}>
-      <div style={topStyle}>{first}</div>
-      <div style={contentStyle}>{rest}</div>
-    </div>
-  );
-};
+) => (
+  <div style={style}>
+    {props.children}
+  </div>
+);

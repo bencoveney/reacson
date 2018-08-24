@@ -24,7 +24,7 @@ const contentStyle: React.CSSProperties = {
   flex: "1 1 auto",
   height: "100%",
   overflow: "auto",
-  padding: "2rem",
+  padding: "4rem",
   zIndex: 0,
 };
 
