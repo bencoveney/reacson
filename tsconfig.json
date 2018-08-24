@@ -6,5 +6,6 @@
     "jsx": "react",
     "noUnusedLocals": true,
     "noUnusedParameters": true,
+    "moduleResolution": "node"
   }
 }
